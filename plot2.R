@@ -19,6 +19,6 @@ png(file = "plot2.png", width = 480, height = 480, units = "px")
 plot(power_data$Time, power_data$Global_active_power,
      type = "l",
      xlab = "",
-     ylab = "Global Active Power (kilowatts")
+     ylab = "Global Active Power (kilowatts)")
 dev.off()
 

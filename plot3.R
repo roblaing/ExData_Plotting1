@@ -1,13 +1,3 @@
-# "Date"
-# "Time"
-# "Global_active_power"  
-# "Global_reactive_power" 
-# "Voltage"
-# "Global_intensity"     
-# "Sub_metering_1"
-# "Sub_metering_2"        
-# "Sub_metering_3"
-
 power_data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?")
 power_data$Date <- strptime(power_data$Date, "%d/%m/%Y")
 day1 <- as.POSIXlt("2007-02-01")

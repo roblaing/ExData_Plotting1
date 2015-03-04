@@ -14,7 +14,7 @@ day1 <- as.POSIXlt("2007-02-01")
 day2 <- as.POSIXlt("2007-02-02")
 power_data <- subset(power_data, power_data$Date == day1 | power_data$Date == day2)
 
-png(file = "plot1.png", width = 480, height = 480, units = "px")
+png(file = "plot1.png", width = 480, height = 480, units = "px", bg = "transparent")
 hist(power_data$Global_active_power,
      main = "Global Active Power",
      col = "red",

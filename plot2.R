@@ -15,7 +15,7 @@ day2 <- as.POSIXlt("2007-02-02")
 power_data <- subset(power_data, power_data$Date == day1 | power_data$Date == day2)
 power_data$Time <- strptime(paste(as.character(power_data$Date), power_data$Time), "%Y-%m-%d %H:%M:%S")
 
-png(file = "plot2.png", width = 480, height = 480, units = "px")
+png(file = "plot2.png", width = 480, height = 480, units = "px", "transparent")
 plot(power_data$Time, power_data$Global_active_power,
      type = "l",
      xlab = "",

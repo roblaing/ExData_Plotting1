@@ -25,6 +25,7 @@ plot(power_data$Time, power_data$Sub_metering_1,
      ylab = "Energy sub metering")
 lines(power_data$Time, power_data$Sub_metering_2, col = "#ff2500")
 lines(power_data$Time, power_data$Sub_metering_3, col = "#0432fe")
+# byt = "n" turns off border
 legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        col = c("black", "#ff2500", "#0432fe"), lty = 1, bty = "n")
 
